@@ -92,6 +92,10 @@ header{position:sticky;top:0;z-index:900;height:var(--header-h);background:rgba(
 
 .brand-logo{display:flex;align-items:center;justify-content:center;width:220px;height:54px;border-radius:10px;padding:4px 12px;transition:all .2s ease;flex-shrink:0}
 .brand-logo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.brand-logo .logo-night{display:none}
+[data-theme="dark"] .brand-logo .logo-day{display:none}
+[data-theme="dark"] .brand-logo .logo-night{display:block}
+.brand-logo.empty img{display:none!important}
 .brand-logo.empty{border:1.6px dashed rgba(14,26,31,.22);background:rgba(14,26,31,.02)}
 [data-theme="dark"] .brand-logo.empty{border-color:rgba(234,243,247,.22);background:rgba(234,243,247,.02)}
 .brand-logo.empty::after{content:'логотип';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(14,26,31,.32);font-weight:600}
@@ -290,6 +294,7 @@ footer{background:var(--dark-2);color:#fff;padding:60px 0 22px}
 .foot-col ul a:hover{opacity:1}
 .foot-logo{display:flex;align-items:center;justify-content:flex-start;width:240px;max-width:100%;height:60px;border-radius:10px;padding:4px 12px;margin-bottom:14px}
 .foot-logo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.foot-logo.empty img{display:none!important}
 .foot-logo.empty{border:1.6px dashed rgba(255,255,255,.25);background:rgba(255,255,255,.03);justify-content:center}
 .foot-logo.empty::after{content:'логотип';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);font-weight:600}
 .foot-social{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
@@ -372,8 +377,7 @@ footer{background:var(--dark-2);color:#fff;padding:60px 0 22px}
 <header>
   <div class="wrap hrow">
     <a href="#" class="brand-logo" aria-label="Ocean Cleaning">
-      <img src="/images/logo-header.png" alt="Ocean Cleaning"
-           onerror="this.parentElement.classList.add('empty');this.style.display='none'">
+      <img class="logo-day" src="/images/logo-day.png" alt="Ocean Cleaning"><img class="logo-night" src="/images/logo-night.png" alt="Ocean Cleaning">
     </a>
     <nav class="nav" aria-label="Главная навигация">
       <a href="#services" data-i18n="nav.services">Услуги</a>
@@ -459,14 +463,14 @@ footer{background:var(--dark-2);color:#fff;padding:60px 0 22px}
     </div>
     <div class="eq-scroll-wrap">
       <div class="eq-grid">
-        <div class="eq"><div class="eq-img"><img src="/images/1.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Мощный экстрактор-комбайн для ковров и полов</h3><p>Профессиональная машина для химчистки ковров и влажной уборки полов с производительностью до 600 м²/ч. Оснащена мощным всасыванием, цилиндрической щеткой и вместительными баками для длительной непрерывной работы.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/2.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Автономная система очистки и дезинфекции</h3><p>Беспроводная система для мойки и дезинфекции полов, стен и санитарных зон. Быстро удаляет загрязнения и бактерии, обеспечивая комплексную очистку помещений.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/3.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Профессиональный вентилятор для быстрой сушки</h3><p>Мощный и тихий вентилятор для ускоренной сушки ковров, мебели и напольных покрытий после уборки. Оснащён 3 скоростями, удобной ручкой и колёсами для лёгкого перемещения.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/4.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Пенно-экстракторный пылесос с подогревом</h3><p>Профессиональный моющий пылесос для глубокой чистки мебели и ковров тёплой пеной. Обеспечивает эффективное удаление загрязнений и быстрое высыхание поверхностей всего за 20 минут.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/5.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Вертикальный пылесос для глубокой чистки ковров</h3><p>Профессиональный щёточный пылесос с вращающейся цилиндрической щёткой для эффективного удаления пыли и грязи из глубины коврового ворса. Подходит для ежедневного ухода и продления срока службы покрытий.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/6.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Профессиональный экстрактор для мебели и ковров</h3><p>Мощный моющий пылесос с подогревом раствора для глубокой чистки ковров и мягкой мебели. Высокое давление распыления и мощная система всасывания обеспечивают эффективное удаление загрязнений и быстрое высыхание поверхностей.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/7.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Система мойки и дезинфекции пищевых помещений</h3><p>Профессиональное решение для очистки и санитарной обработки кухонь, пищевых производств и супермаркетов. Наносит плотную пену, эффективно удаляет загрязнения и оставляет поверхности сухими после уборки.</p></div></div>
-        <div class="eq"><div class="eq-img"><img src="/images/8.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Пенный экстрактор для быстрой чистки мебели</h3><p>Профессиональная машина для чистки мягкой мебели плотной пеной с минимальным временем высыхания. Эффективно удаляет загрязнения и подходит для отелей, транспорта, кинотеатров и других объектов с высокой проходимостью.</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/1.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/2.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/3.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/4.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/5.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/6.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/7.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
+        <div class="eq"><div class="eq-img"><img src="/images/8.jpg" alt="" loading="lazy"></div><div class="eq-info"><h3>Заголовок</h3><p>Описание</p></div></div>
       </div>
     </div>
     <p class="scroll-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg><span data-i18n="eq.hint">Листайте вправо, чтобы увидеть весь арсенал</span></p>
@@ -605,8 +609,7 @@ footer{background:var(--dark-2);color:#fff;padding:60px 0 22px}
     <div class="foot-grid">
       <div class="foot-col">
         <a href="#" class="foot-logo" aria-label="Ocean Cleaning">
-          <img src="/images/logo-footer.png" alt="Ocean Cleaning"
-               onerror="this.parentElement.classList.add('empty');this.style.display='none'">
+          <img class="logo-night" src="/images/logo-night.png" alt="Ocean Cleaning">
         </a>
         <p style="margin-top:8px" data-i18n="foot.desc">Профессиональная химчистка мебели в Астане: диваны, кресла, матрасы, ковры и шторы. Выезд на дом, безопасные средства, гарантия результата.</p>
         <div class="foot-social">
@@ -673,8 +676,7 @@ footer{background:var(--dark-2);color:#fff;padding:60px 0 22px}
   <aside class="bmenu-panel">
     <div class="bmenu-head">
       <a href="#" class="brand-logo" aria-label="Ocean Cleaning">
-        <img src="/images/logo-header.png" alt="Ocean Cleaning"
-             onerror="this.parentElement.classList.add('empty');this.style.display='none'">
+        <img class="logo-day" src="/images/logo-day.png" alt="Ocean Cleaning"><img class="logo-night" src="/images/logo-night.png" alt="Ocean Cleaning">
       </a>
       <button class="bmenu-close" onclick="closeBurger()" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
     </div>
@@ -980,6 +982,7 @@ themeBtn.addEventListener('click', () => {
     document.documentElement.setAttribute('data-theme','dark');
     localStorage.setItem('oc-theme','dark');
   }
+  refreshLogos();
 });
 
 const bttBtn = document.getElementById('bttBtn');
@@ -1077,6 +1080,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+function refreshLogos(){
+  const dark = document.documentElement.getAttribute('data-theme')==='dark';
+  document.querySelectorAll('.brand-logo').forEach(box=>{
+    const active = box.querySelector(dark ? '.logo-night' : '.logo-day');
+    const failed = !active || active.dataset.failed==='1' || (active.complete && active.naturalWidth===0);
+    box.classList.toggle('empty', failed);
+  });
+  document.querySelectorAll('.foot-logo').forEach(box=>{
+    const active = box.querySelector('.logo-night') || box.querySelector('img');
+    const failed = !active || active.dataset.failed==='1' || (active.complete && active.naturalWidth===0);
+    box.classList.toggle('empty', failed);
+  });
+}
+document.querySelectorAll('.brand-logo img, .foot-logo img').forEach(img=>{
+  img.addEventListener('error', ()=>{ img.dataset.failed='1'; refreshLogos(); });
+  img.addEventListener('load', ()=>{ img.dataset.failed=''; refreshLogos(); });
+});
+refreshLogos();
+window.addEventListener('load', refreshLogos);
 </script>
 
 </body>
