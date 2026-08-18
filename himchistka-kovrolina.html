@@ -13,6 +13,7 @@
 <meta property="og:url" content="https://ocean-cleaning.kz/himchistka-kovrolina.html">
 <meta property="og:image" content="https://ocean-cleaning.kz/images/og-cover.jpg">
 <link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
 --ink:#0A3A72;--ink2:#062A55;--ink3:#14497F;
@@ -20,7 +21,7 @@
 --soft:#F1F7FC;--card:#E4F0FA;--line:#CBDFF0;--sub:#54708C;
 --wrap:1200px}
 html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
@@ -200,6 +201,8 @@ h3{font-size:16px;font-weight:700;line-height:1.3}
 .fab.dim a,.fab.dim button{opacity:.14}
 .fab.dim:hover a,.fab.dim:hover button,.fab.dim:focus-within a,.fab.dim:focus-within button{opacity:1}
 .fab.dim .f-top:not(.on){opacity:0}
+/* карточки под реальный формат фото 1672x941 (16:9) */
+.card .ph,.tiles .ph{aspect-ratio:16/9}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips span{padding:6px 13px;background:var(--ink3);color:#fff;font-size:12px;font-weight:700;letter-spacing:.04em}</style>
 
@@ -208,7 +211,7 @@ h3{font-size:16px;font-weight:700;line-height:1.3}
 <body>
 <header class="hd">
 <div class="wrap hd-in">
-<a href="index.html" class="logo" aria-label="Ocean Cleaning — на главную"><span class="logo-w"><img src="images/logo.png" alt="Ocean Cleaning — химчистка мебели и клининг в Алматы" class="logo-img" width="300" height="50" decoding="async" onerror="this.remove()"><span class="logo-fb"><svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocean Cleaning — химчистка мебели, Алматы"><text x="0" y="20" font-family="system-ui,Arial,sans-serif" font-weight="800" font-size="20" letter-spacing="1" fill="#FFFFFF">OCEAN CLEANING</text><text x="1" y="33" font-family="system-ui,Arial,sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.6" fill="#0090E0">ХИМЧИСТКА МЕБЕЛИ · АЛМАТЫ</text></svg></span></span></a>
+<a href="index.html" class="logo" aria-label="Ocean Cleaning — на главную"><span class="logo-w"><img src="images/logo.png" alt="Ocean Cleaning — химчистка мебели и клининг в Алматы" class="logo-img" width="300" height="50" decoding="async" onerror="this.remove()"><span class="logo-fb"><svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocean Cleaning — химчистка мебели, Алматы"><text x="0" y="20" font-family="Manrope,system-ui,Arial,sans-serif" font-weight="800" font-size="20" letter-spacing="1" fill="#FFFFFF">OCEAN CLEANING</text><text x="1" y="33" font-family="Manrope,system-ui,Arial,sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.6" fill="#0090E0">ХИМЧИСТКА МЕБЕЛИ · АЛМАТЫ</text></svg></span></span></a>
 <nav class="nav"><a href="himchistka-divanov.html">Диваны</a><a href="himchistka-kresel-i-stulev.html">Кресла и стулья</a><a href="himchistka-kovrov.html">Ковры</a><a href="klining-dlya-horeca.html">Юрлицам</a><a href="index.html#services">Все услуги</a><a href="index.html#contacts">Контакты</a></nav>
 <div class="hd-cta">
 <a href="tel:+77478846807" class="tel" data-conv="call">+7 747 884 6807</a>
@@ -219,7 +222,7 @@ h3{font-size:16px;font-weight:700;line-height:1.3}
 </header>
 <div class="ovl" id="ovl"></div>
 <aside class="drw" id="drw" aria-label="Меню">
-<div class="drw-hd"><span class="logo-w"><img src="images/logo.png" alt="Ocean Cleaning — химчистка мебели и клининг в Алматы" class="logo-img" width="300" height="50" decoding="async" onerror="this.remove()"><span class="logo-fb"><svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocean Cleaning — химчистка мебели, Алматы"><text x="0" y="20" font-family="system-ui,Arial,sans-serif" font-weight="800" font-size="20" letter-spacing="1" fill="#FFFFFF">OCEAN CLEANING</text><text x="1" y="33" font-family="system-ui,Arial,sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.6" fill="#0090E0">ХИМЧИСТКА МЕБЕЛИ · АЛМАТЫ</text></svg></span></span><button class="burger" id="drwclose" aria-label="Закрыть меню"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="drw-hd"><span class="logo-w"><img src="images/logo.png" alt="Ocean Cleaning — химчистка мебели и клининг в Алматы" class="logo-img" width="300" height="50" decoding="async" onerror="this.remove()"><span class="logo-fb"><svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocean Cleaning — химчистка мебели, Алматы"><text x="0" y="20" font-family="Manrope,system-ui,Arial,sans-serif" font-weight="800" font-size="20" letter-spacing="1" fill="#FFFFFF">OCEAN CLEANING</text><text x="1" y="33" font-family="Manrope,system-ui,Arial,sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.6" fill="#0090E0">ХИМЧИСТКА МЕБЕЛИ · АЛМАТЫ</text></svg></span></span><button class="burger" id="drwclose" aria-label="Закрыть меню"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 <nav><a href="himchistka-divanov.html">Химчистка диванов</a><a href="himchistka-kresel-i-stulev.html">Химчистка кресел и стульев</a><a href="himchistka-kovrov.html">Химчистка ковров</a><a href="himchistka-kovrolina.html">Химчистка ковролина</a><a href="himchistka-matrasov.html">Химчистка матрасов</a><a href="himchistka-shtor.html">Химчистка штор</a><a href="udalenie-pyaten-i-zapahov.html">Удаление пятен и запахов</a><a href="klining-dlya-horeca.html">Клининг для ресторанов и кафе</a><a href="index.html#portfolio">Работы</a><a href="index.html#about">О компании</a><a href="index.html#contacts">Контакты</a>
 <div class="mt24"><a href="tel:+77478846807" style="display:block;color:#fff;font-size:19px;font-weight:800;margin-bottom:14px" data-conv="call">+7 747 884 6807</a>
 <a href="https://wa.me/77478846807?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20Ocean%20Cleaning.%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D1%85%D0%B8%D0%BC%D1%87%D0%B8%D1%81%D1%82%D0%BA%D1%83." target="_blank" rel="noopener" class="btn full" data-conv="wa">Написать в WhatsApp</a></div>
@@ -298,7 +301,7 @@ h3{font-size:16px;font-weight:700;line-height:1.3}
 <footer class="dark2 ft">
 <div class="wrap" style="padding-top:52px;padding-bottom:44px">
 <div class="grid g4">
-<div><span class="logo-w"><img src="images/logo.png" alt="Ocean Cleaning — химчистка мебели и клининг в Алматы" class="logo-img" width="300" height="50" decoding="async" onerror="this.remove()"><span class="logo-fb"><svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocean Cleaning — химчистка мебели, Алматы"><text x="0" y="20" font-family="system-ui,Arial,sans-serif" font-weight="800" font-size="20" letter-spacing="1" fill="#FFFFFF">OCEAN CLEANING</text><text x="1" y="33" font-family="system-ui,Arial,sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.6" fill="#0090E0">ХИМЧИСТКА МЕБЕЛИ · АЛМАТЫ</text></svg></span></span>
+<div><span class="logo-w"><img src="images/logo.png" alt="Ocean Cleaning — химчистка мебели и клининг в Алматы" class="logo-img" width="300" height="50" decoding="async" onerror="this.remove()"><span class="logo-fb"><svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ocean Cleaning — химчистка мебели, Алматы"><text x="0" y="20" font-family="Manrope,system-ui,Arial,sans-serif" font-weight="800" font-size="20" letter-spacing="1" fill="#FFFFFF">OCEAN CLEANING</text><text x="1" y="33" font-family="Manrope,system-ui,Arial,sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.6" fill="#0090E0">ХИМЧИСТКА МЕБЕЛИ · АЛМАТЫ</text></svg></span></span>
 <p class="sub mt16" style="font-size:14px">Химчистка мебели и клининг в Алматы. Работаем с ресторанами, кафе и отелями по договору, а также с квартирами и офисами. Выезд на объект.</p></div>
 <div class="ft-col"><div class="up mb16" style="font-size:13px;font-weight:700">Услуги</div><ul><li><a href="himchistka-divanov.html">Химчистка диванов</a></li><li><a href="himchistka-kresel-i-stulev.html">Химчистка кресел и стульев</a></li><li><a href="himchistka-kovrov.html">Химчистка ковров</a></li><li><a href="himchistka-kovrolina.html">Химчистка ковролина</a></li></ul></div>
 <div class="ft-col"><div class="up mb16" style="font-size:13px;font-weight:700">&nbsp;</div><ul><li><a href="himchistka-matrasov.html">Химчистка матрасов</a></li><li><a href="himchistka-shtor.html">Химчистка штор</a></li><li><a href="udalenie-pyaten-i-zapahov.html">Удаление пятен и запахов</a></li><li><a href="klining-dlya-horeca.html">Клининг для ресторанов и кафе</a></li><li><a href="index.html#portfolio">Работы</a></li><li><a href="index.html#about">О компании</a></li></ul></div>
